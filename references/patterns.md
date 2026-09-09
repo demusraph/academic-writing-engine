@@ -1,4 +1,4 @@
-# Academic Anti-AI: Linguistic Patterns, Vocabulary Tiers & Detection Triggers
+# Academic Writing Engine: Stylometric Patterns & Authentic Vocabulary Tiers
 
 Complete catalog of linguistic artifacts (*AI-isms*), mechanical punctuation tells, and methodology anti-patterns that trigger institutional AI classifiers (*Turnitin, GPTZero, Copyleaks, ZeroGPT, Originality.ai*).
 

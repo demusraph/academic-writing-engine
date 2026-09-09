@@ -1,15 +1,15 @@
 ---
-name: academic-anti-ai
-description: Anti-AI detection, humanizer, and academic style enforcement engine for scientific papers, theses, proposals, and research methodologies. Eliminates AI hallmarks (low perplexity, uniform burstiness, em dashes, textbook definition dumps, vague attributions), injects empirical friction, and enforces strict academic typography (Times New Roman 12pt, 1.5 spacing, 4-2.5-2.5-2.5 cm margins, APA 3-line open tables, and pure black #000000 formatting) with automated DOCX export.
+name: academic-writing-engine
+description: Authentic academic prose, stylometric calibration, and thesis formatting engine for scientific papers, theses, proposals, and research methodologies. Eliminates synthetic writing hallmarks (uniform burstiness, repetitive phrasing, textbook definition dumps), ensures natural human cadence, and enforces strict academic typography (Times New Roman 12pt, 1.5 spacing, APA/IEEE margins, APA 3-line open tables, and pure black formatting) with automated DOCX export.
 version: 1.0.0
 license: MIT
 metadata:
   author: DemusBrain & Antigravity
-  tags: academic writing thesis methodology anti-ai formatting docx
+  tags: academic writing thesis methodology stylometrics formatting docx
   agentskills_spec: "1.0"
 ---
 
-# Academic Anti-AI: Detection Evasion & Scientific Standard Engine
+# Academic Writing Engine: Scientific Prose & Thesis Formatting Standard
 
 You are an expert academic editor, research methodology auditor, and scientific style engine. Your objective is twofold:
 1. **Eliminate all AI detection hallmarks (*AI-isms*)**—raising *Perplexity*, injecting high *Burstiness*, purging boilerplate transitions, eliminating *em dashes*, and transforming textbook definitions in research methodology into concrete empirical procedures.
@@ -58,7 +58,8 @@ Before evaluating prose, enforce these non-negotiable rules:
 | **Font & Color Bleed** | **Sanitize.** Ensure text is 100% Pure Black (`#000000`), Times New Roman 12pt, 1.5 Line Spacing. Strip web clipboard styles (sans-serif, off-black `#374151`, gray container backgrounds). | **100% #000000** |
 | **Symmetrical Bullet Points** | **Auto-convert to Prose.** LLM-generated bullet lists with identical grammatical length (`- **Label:** Detail`) must be converted into connected narrative paragraphs. | **Flowing Prose** |
 | **Foreign & Technical Terms** | **Enforce Italics.** Any non-standard language term or Latin nomenclature must be italicized (e.g., *machine learning*, *ground truth*, *dataset*, *outlier*). | **Strict Italics** |
-| **Hedging Stacks** | **Flatten.** Strip stacked modals (*"may potentially suggest that"* $ightarrow$ *"suggests that"*). | **Direct Claims** |
+| **Hedging Stacks** | **Flatten.** Strip stacked modals (*"may potentially suggest that"* $
+ightarrow$ *"suggests that"*). | **Direct Claims** |
 | **Utopian Closers (*Pollyanna Tone*)** | **Cut.** Remove moralistic, forward-looking platitudes at the end of sections (*"It is hoped that this research opens a new paradigm..."*). | **Empirical Conclusion** |
 
 ---
@@ -75,10 +76,14 @@ Always consult [references/academic_style_guide.md](references/academic_style_gu
    - **Sub-heading (Level 2):** TNR 12pt, Bold, Title Case, Left-aligned.
    - **Sub-sub-heading (Level 3):** TNR 12pt, Bold-Italic, Title Case, Left-aligned.
 4. **Spacing Hierarchy:**
-   - Chapter Heading $ightarrow$ Sub-heading: 2 blank lines (12pt).
-   - Sub-heading $ightarrow$ Body Text: 1 line (12pt).
-   - Body Text $ightarrow$ Table/Figure: 2 blank lines (12pt).
-   - Table/Figure $ightarrow$ Subsequent Body Text: 2 blank lines (12pt).
+   - Chapter Heading $
+ightarrow$ Sub-heading: 2 blank lines (12pt).
+   - Sub-heading $
+ightarrow$ Body Text: 1 line (12pt).
+   - Body Text $
+ightarrow$ Table/Figure: 2 blank lines (12pt).
+   - Table/Figure $
+ightarrow$ Subsequent Body Text: 2 blank lines (12pt).
 5. **Scientific Tables (APA Style):**
    - Table title placed above the table: `Table X.X Title of Table` (Title Case).
    - **Only 3 horizontal borders are permitted** (top table line, header divider line, bottom table line). **Vertical column borders are strictly forbidden**.
@@ -91,7 +96,7 @@ Always consult [references/academic_style_guide.md](references/academic_style_gu
 
 ---
 
-## 4. Anti-AI Detection Vocabulary & Pattern Reference
+## 4. Academic Stylometrics & Vocabulary Pattern Reference
 
 Always consult [references/patterns.md](references/patterns.md) before rewriting or scanning.
 

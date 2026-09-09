@@ -301,7 +301,7 @@ Penanganan data yang hilang (*missing values*) diproses melalui metode imputasi 
     convert_markdown_to_academic_docx(sample_md, output_path)
 
 def main():
-    parser = argparse.ArgumentParser(description="Academic Anti-AI DOCX Generator")
+    parser = argparse.ArgumentParser(description="Academic Writing Engine DOCX Generator")
     parser.add_argument("input", nargs="?", help="File input markdown")
     parser.add_argument("output", nargs="?", help="File output .docx")
     parser.add_argument("--test", action="store_true", help="Generate sampel dokumen uji coba")

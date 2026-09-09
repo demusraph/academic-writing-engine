@@ -1,4 +1,5 @@
-# Academic Anti-AI: Scientific Humanizer & Thesis Formatting Engine
+# 🎓 Academic Writing Engine
+### Scientific Prose Standard & Automated Thesis Formatting
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -6,7 +7,7 @@
 [![Agent Skills Spec: 1.0](https://img.shields.io/badge/Agent%20Skills-Spec%201.0-purple.svg)](SKILL.md)
 [![Zero-Auth Verification](https://img.shields.io/badge/Verification-Zero--Auth%20Public%20APIs-brightgreen.svg)](scripts/)
 
-> **The definitive scientific humanizer, anti-AI detection evasion protocol, and automated thesis formatting engine for higher education and peer-reviewed research.** Transforms robotic, low-perplexity AI drafts into rigorous, empirical, publication-grade academic prose and compiles them directly into 100% compliant Microsoft Word (`.docx`) documents.
+> **The definitive academic writing standard, stylometric calibration, and automated thesis formatting engine for higher education and peer-reviewed research.** Refines synthetic drafts into rigorous, empirical, publication-grade academic prose and compiles them directly into 100% compliant Microsoft Word (`.docx`) documents.
 
 ---
 
@@ -76,8 +77,8 @@ Designed with **Zero Friction**: run directly via [uv](https://github.com/astral
 
 ```bash
 # Clone the repository
-git clone https://github.com/demusraph/academic-anti-ai.git
-cd academic-anti-ai
+git clone https://github.com/demusraph/academic-writing-engine.git
+cd academic-writing-engine
 
 # 1. Run live verification against the public ZeroGPT API (Target: 0.0% AI)
 uv run scripts/verify_zerogpt.py draft.txt
@@ -95,8 +96,8 @@ uv run --with python-docx scripts/export_academic_docx.py draft.txt thesis_final
 ### Option B: Using Standard `pip`
 
 ```bash
-git clone https://github.com/demusraph/academic-anti-ai.git
-cd academic-anti-ai
+git clone https://github.com/demusraph/academic-writing-engine.git
+cd academic-writing-engine
 
 pip install -r requirements.txt
 
@@ -155,7 +156,7 @@ This repository natively functions as an **Agent Skill** adhering to the [Agent 
 
 To install into your AI coding assistant (such as Google Antigravity, Claude Code, Cursor, or Roo-Code), place this directory in your skills path:
 ```
-~/.gemini/config/skills/academic-anti-ai/
+~/.gemini/config/skills/academic-writing-engine/
 ```
 Your AI assistant will automatically recognize `SKILL.md` and apply academic prose restructuring and Word document generation autonomously.
 

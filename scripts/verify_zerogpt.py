@@ -7,7 +7,7 @@ Engine verifikasi dan kalibrasi otomatis langsung ke live API ZeroGPT
 Fitur:
 - Memeriksa skor AI real-time, persentase fakePercentage, dan kalimat yang ter-flag (h).
 - Mode Auto-Clean (--auto-clean): Otomatis membedah dan merevisi kalimat yang ter-flag
-  menggunakan heuristik Academic Anti-AI hingga mencapai target skor 0.0% AI.
+  menggunakan heuristik Academic Writing Engine hingga mencapai target skor 0.0% AI.
 - Dukungan input file (.md, .txt) maupun string langsung.
 - Standar pustaka Python murni (tanpa dependensi eksternal).
 """
@@ -142,7 +142,7 @@ def auto_clean_text(text: str, target_score=0.0, max_iterations=3):
             print(f"\n[SUCCESS] Target skor tercapai ({score}% <= {target_score}%)!")
             return current_text, True, history
             
-        print(" -> Menerapkan perbaikan heuristik Academic Anti-AI pada kalimat ter-flag:")
+        print(" -> Menerapkan perbaikan heuristik Academic Writing Engine pada kalimat ter-flag:")
         for idx, f_sent in enumerate(flagged, 1):
             refined = refine_flagged_sentence(f_sent, lang)
             print(f"   [{idx}] Asli  : {f_sent[:80]}...")
