@@ -383,9 +383,9 @@ def main():
     parser.add_argument("-o", "--output", help="File output untuk menyimpan teks hasil kalibrasi")
     parser.add_argument("--api-key", help="GPTZero official API key (v2 API)")
     parser.add_argument("--jwt", help="GPTZero WebApp JWT token (v3 API)")
-    parser.add_argument("--auto-clean", action="store_true", help="Otomatis merevisi kalimat ter-flag hingga berstatus HUMAN_ONLY")
-    parser.add_argument("--audit", action="store_true", help="Tampilkan audit per-kalimat lengkap beserta perplexity")
-    parser.add_argument("--json", action="store_true", help="Output ringkasan dalam format JSON")
+    parser.add_argument("--auto-clean", action="store_true", help="Automatically refine flagged sentences to achieve HUMAN_ONLY")
+    parser.add_argument("--audit", action="store_true", help="Show full sentence-level audit with perplexity proxy")
+    parser.add_argument("--json", action="store_true", help="Summary output in JSON format")
     
     args = parser.parse_args()
     
@@ -401,7 +401,7 @@ def main():
         
     # Cek apakah pengguna minta query ke live API
     if args.api_key or args.jwt or os.environ.get('GPTZERO_API_KEY') or os.environ.get('GPTZERO_JWT'):
-        print("[INFO] Mengirim request ke GPTZero Live API...")
+        print("[INFO] Sending request to GPTZero Live API...")
         res = query_gptzero_api(text, api_key=args.api_key, jwt_token=args.jwt)
         if args.json:
             print(json.dumps(res, indent=2))
@@ -437,12 +437,12 @@ def main():
     print(f"Human Probability       : {analysis['class_probabilities']['human']*100:.1f}%")
     print("------------------------------------------------------------------")
     stats = analysis['writing_stats']
-    print(f"Total Karakter / Kata   : {stats['total_characters']} chars / {stats['total_words']} words")
-    print(f"Jumlah Kalimat          : {stats['sentence_count']}")
-    print(f"Mean Panjang Kalimat    : {stats['mean_sentence_length']} words")
-    print(f"Std Dev Panjang Kalimat : {stats['std_dev_sentence_length']}")
+    print(f"Total Characters / Words: {stats['total_characters']} chars / {stats['total_words']} words")
+    print(f"Total Sentences         : {stats['sentence_count']}")
+    print(f"Mean Sentence Length    : {stats['mean_sentence_length']} words")
+    print(f"Std Dev Sentence Length : {stats['std_dev_sentence_length']}")
     print(f"Burstiness (sigma/mu)   : {stats['burstiness']} -> {stats['burstiness_verdict']}")
-    print(f"Kalimat Ter-flag AI     : {analysis['highlighted_sentences_count']} / {stats['sentence_count']} ({analysis['highlight_ratio']*100:.1f}%)")
+    print(f"Flagged Sentences (AI)  : {analysis['highlighted_sentences_count']} / {stats['sentence_count']} ({analysis['highlight_ratio']*100:.1f}%)")
     print("==================================================================")
     
     if args.audit or analysis['highlighted_sentences_count'] > 0:

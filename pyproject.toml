@@ -1,11 +1,11 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "academic-anti-ai"
 version = "1.0.0"
-description = "Anti-AI detection, scientific humanizer, and academic thesis formatting engine (Binus / APA) with automated DOCX export and zero-friction verification."
+description = "Anti-AI detection, scientific humanizer, and academic thesis formatting engine (APA / IEEE) with automated DOCX export and zero-friction verification."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
@@ -21,8 +21,9 @@ keywords = [
   "zerogpt",
   "gptzero",
   "originality-ai",
-  "binus",
-  "apa-style"
+  "apa-style",
+  "ieee-style",
+  "research-methodology"
 ]
 classifiers = [
   "Development Status :: 5 - Production/Stable",

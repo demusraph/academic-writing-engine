@@ -136,7 +136,7 @@ def auto_clean_text(text: str, target_score=0.0, max_iterations=3):
         })
         
         print(f" -> Skor AI Saat Ini: {score}% | {feedback} | Total Kata: {words}")
-        print(f" -> Jumlah Kalimat Ter-flag: {len(flagged)}")
+        print(f" -> Jumlah Flagged Sentences: {len(flagged)}")
         
         if score <= target_score:
             print(f"\n[SUCCESS] Target skor tercapai ({score}% <= {target_score}%)!")
@@ -157,9 +157,9 @@ def main():
     parser = argparse.ArgumentParser(description="ZeroGPT Live Verifier & Auto-Cleaner")
     parser.add_argument("input", nargs="?", help="File input (.txt/.md) atau string teks")
     parser.add_argument("-o", "--output", help="File output untuk menyimpan teks bersih")
-    parser.add_argument("--auto-clean", action="store_true", help="Otomatis merevisi kalimat ter-flag hingga 0.0%% AI")
-    parser.add_argument("--target", type=float, default=0.0, help="Target skor AI maksimum (default: 0.0)")
-    parser.add_argument("--json", action="store_true", help="Output ringkasan dalam format JSON")
+    parser.add_argument("--auto-clean", action="store_true", help="Automatically refine flagged sentences until reaching 0.0%% AI")
+    parser.add_argument("--target", type=float, default=0.0, help="Target maximum AI score (default: 0.0)")
+    parser.add_argument("--json", action="store_true", help="Summary output in JSON format")
     
     args = parser.parse_args()
     
@@ -182,17 +182,17 @@ def main():
         if args.json:
             print(json.dumps({'success': success, 'history': history}, indent=2))
     else:
-        print("[INFO] Memeriksa teks ke live ZeroGPT API...")
+        print("[INFO] Checking text against live ZeroGPT API...")
         res = query_zerogpt_api(content)
         if args.json:
             print(json.dumps(res, indent=2))
         else:
             if res.get('success'):
                 print(f"Status: SUCCESS")
-                print(f"Skor AI: {res.get('fakePercentage')}%")
+                print(f"AI Score: {res.get('fakePercentage')}%")
                 print(f"Feedback: {res.get('feedback')}")
-                print(f"Kata Terdeteksi AI: {res.get('aiWords')} / {res.get('textWords')}")
-                print(f"Kalimat Ter-flag ({len(res.get('flagged', []))}):")
+                print(f"AI Words Detected: {res.get('aiWords')} / {res.get('textWords')}")
+                print(f"Flagged Sentences ({len(res.get('flagged', []))}):")
                 for s in res.get('flagged', []):
                     print(f" - {s}")
             else:
