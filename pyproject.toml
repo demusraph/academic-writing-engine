@@ -1,0 +1,49 @@
+﻿[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academic-anti-ai"
+version = "1.0.0"
+description = "Anti-AI detection, scientific humanizer, and academic thesis formatting engine (Binus / APA) with automated DOCX export and zero-friction verification."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "DemusBrain & Nicodemus" }
+]
+keywords = [
+  "academic-writing",
+  "thesis",
+  "anti-ai",
+  "humanizer",
+  "docx-generator",
+  "zerogpt",
+  "gptzero",
+  "originality-ai",
+  "binus",
+  "apa-style"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Text Processing :: Linguistic"
+]
+dependencies = [
+  "python-docx>=1.1.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/demusraph/academic-anti-ai"
+Repository = "https://github.com/demusraph/academic-anti-ai"
+Issues = "https://github.com/demusraph/academic-anti-ai/issues"

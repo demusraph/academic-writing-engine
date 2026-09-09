@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "TC_001",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 13,025 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_002",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 3,230 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_003",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 80,150th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_004",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 45,300 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_005",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_006",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_007",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_008",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_009",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_010",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_011",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 21 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_012",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_013",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_014",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_015",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_016",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 13,400 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_017",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 3,455 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_018",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 80,900th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_019",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 46,425 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_020",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_021",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_022",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_023",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_024",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_025",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_026",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 26 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_027",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_028",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_029",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_030",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_031",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 13,775 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_032",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 3,680 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_033",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 81,650th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_034",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 47,550 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_035",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_036",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_037",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_038",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_039",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_040",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_041",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 21 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_042",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_043",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_044",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_045",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_046",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 14,150 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_047",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 3,905 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_048",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 82,400th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_049",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 48,675 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_050",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_051",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_052",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_053",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_054",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_055",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_056",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 26 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_057",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_058",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_059",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_060",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_061",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 14,525 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_062",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 4,130 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_063",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 83,150th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_064",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 49,800 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_065",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_066",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_067",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_068",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_069",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_070",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_071",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 21 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_072",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_073",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_074",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_075",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_076",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 14,900 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_077",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 4,355 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_078",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 83,900th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_079",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 50,925 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_080",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_081",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_082",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_083",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_084",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_085",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_086",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 26 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_087",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_088",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_089",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_090",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_091",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "AI / Computer Vision",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We tested the object detector on five hours of camera footage captured across three warehouse loading docks. Of the 15,275 frame buffers processed between July and August, 312 frames were dropped when camera sensor buses reset under midday heat. Rather than running inference on corrupted pixel arrays, we discarded those damaged images and recalculated mean average precision across the remaining frames. Detection confidence hovered around 89.2%, but processing delays grew noticeably whenever bounding box queues exceeded 40 objects. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_092",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical / Imaging",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "id",
+    "text": "Evaluasi model segmentasi semantik pada 4,580 citra histopatologi jaringan biopsi hati menunjukkan nilai dice coefficient sebesar 0,892. Kami mendapati bahwa pada 46 sampel dengan ketebalan preparat yang tidak seragam, kontras tepi sel mengalami distorsi optik di bawah mikroskop cahaya. Alih-alih membuang seluruh sampel mikrograf tersebut, kami melakukan normalisasi histogram adaptif dan mengulang ekstraksi kontur secara terpisah. Langkah penyesuaian ini memulihkan sensitivitas batas lesi sebesar 6,8% tanpa mengubah distribusi intensitas piksel latar belakang. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_093",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We ran our fuzzing harness against the proprietary binary parser for five days across two isolated Docker sandboxes. When the test runner injected malformed string table offsets into the 84,650th ELF header, memory usage climbed past 4 GB. The process crashed at offset 0x0040A1F0 because the section header loop lacked an integer bounds check. After we patched the array index validation, the parser completed 10,000 subsequent fuzzing rounds without a single memory fault. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_094",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Cybersecurity",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengujian ketahanan firewall dilakukan pada kluster switch OpenFlow di laboratorium jaringan tertutup selama empat hari berturut-turut. Dari 52,050 paket probe TCP SYN yang dikirimkan dengan selang waktu acak, 1.240 paket dibatalkan oleh kernel host saat tabel pelacakan koneksi mengalami kepenuhan buffer memori. Kami mencatat lonjakan penggunaan CPU router hingga 86% sebelum mekanisme rate limiting aktif menstabilkan arus paket masuk. Batas penolakan koneksi kemudian dikunci pada 4.500 paket per detik guna mencegah sistem lumpuh total. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_095",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "IoT & Agriculture",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "en",
+    "text": "We staked eight battery-powered sensor probes across our Zona Riset 1 cassava plot in January. Every fifteen minutes, each station sampled soil water potential and broadcast raw voltages across a 915 MHz LoRa link. Monsoon downpours caused 184 packet timeouts at the receiver. We flagged these dropped intervals and fitted localized cubic splines across the dry spells. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_096",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Embedded Systems",
+    "chapter": "Abstrak",
+    "lang": "id",
+    "text": "Pengujian konsumsi daya pada modul mikrokontroler ESP32 membuktikan efisiensi siklus deep-sleep pada tegangan kerja 3,3 volt. Selama 72 jam pengamatan baterai lithium 18650 di stasiun cuaca lapangan, arus diam tercatat stabil pada 14,2 mikroampere saat pemancar nirkabel berada dalam kondisi padam. Namun, lonjakan arus seketika hingga 140 miliampere terjadi setiap kali radio Wi-Fi menginisiasi jabat tangan jaringan dengan router utama. Pola konsumsi berkala ini menghasilkan perkiraan masa pakai baterai selama 11 bulan tanpa penggantian sel. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_097",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Natural Language Processing",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Korpus pengujian terdiri dari 8.500 percakapan layanan pelanggan perbankan daring yang dihimpun selama periode audit triwulan keempat. Kami membuang 412 berkas transkrip teks yang terpotong akibat kegagalan sinkronisasi aplikasi perpesanan saat koneksi seluler pelanggan terputus. Tokenisasi teks dilakukan menggunakan model Byte-Pair Encoding dengan ukuran kosakata 32.000 subkata khusus istilah finansial lokal. Penyetelan awal bobot embedding menghasilkan nilai cross-entropy loss sebesar 2,14 pada data validasi setelah 12 epoch pelatihan. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_098",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Financial Analytics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "We tested our card fraud classifier against six weeks of purchase logs from four regional bank branches. False alarms remained under 0.2%, with true positives peaking at 78.4% across 14,000 card swipes. Peak weekend traffic slowed database queries as gateway routers waited on external IP handshakes. To bypass those bottleneck delays, we kept active merchant keys in local RAM, holding tail response times steady at 24 ms. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_099",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We measured throughput stability across a 5G private radio testbed operating at 3.5 GHz inside an industrial assembly hall. Our test harness confirmed this. Across twenty-four continuous transmission runs with 64-QAM modulation, reflections from metal gantry cranes caused 94 frame drops under line-of-sight blockage. Rather than averaging out these localized attenuation drops, we plotted instantaneous signal-to-interference ratios against crane movement logs. This correlation revealed that multipath fading accounted for 78% of observed packet retransmissions at edge receiver stations. The empirical trade-off remains clear."
+  },
+  {
+    "id": "TC_100",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Telecommunications",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pengukuran latensi round-trip time pada tautan serat optik antarkampus mencatat nilai rata-rata 4,8 milidetik selama jam kerja normal. Saat lalu lintas pencadangan basis data malam hari dimulai pada pukul 23.00, antrean paket di antarmuka router core melonjak hingga memicu peningkatan jitter sebesar 18 milidetik. Kami mengonfigurasi ulang kelas layanan Quality of Service dengan memprioritaskan paket protokol voice-over-IP pada antrean strict-priority. Penyesuaian ini berhasil menekan tingkat paket hilang di bawah 0,1% sepanjang jendela pencadangan data. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_101",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Bab 5 - Kesimpulan",
+    "lang": "id",
+    "text": "Penelitian ini mengevaluasi kinerja kueri analitik pada basis data PostgreSQL yang menampung 21 juta catatan transaksi e-commerce. Kami menguji partisi tabel berbasis partisi bulanan dan membandingkan waktu eksekusi kueri agregasi sebelum dan sesudah pembuatan indeks B-tree majemuk. Dari 100 sesi pengujian beban kerja konkuren menggunakan pgbench, terdapat dua kegagalan koneksi akibat kehabisan socket descriptor pada sistem operasi host. Kami menaikkan batas file descriptor dari 1.024 menjadi 65.536 untuk memastikan kestabilan uji stres kueri. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_102",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Database Systems",
+    "chapter": "Abstrak",
+    "lang": "en",
+    "text": "Our team measured insertion performance across a four-node MongoDB replica set under heavy write pressure. When client load reached 120 concurrent connections, disk checkpoint flushes locked memory buffers and write latency rose from 8 ms to 94 ms. We moved the journal directory to a separate NVMe flash drive. This hardware separation relieved disk saturation and brought commit times down to 11 ms without changing any database connection parameters. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_103",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Software Engineering",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "We decoupled the warehouse order pipeline into independent Kafka worker threads across five distribution centers. System uptime held steady at 99.94% over three months of continuous package tracking. When worker nodes restarted during scheduled kernel patches, consumer offset lag grew by 1,400 messages before catching up. We set up an Elasticsearch telemetry index to monitor lag queues and purge dead-letter messages automatically. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_104",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "Thirty healthy volunteers wore optical pulse sensors during three days of continuous mobility testing. Arm movements and stair climbing introduced motion noise into 240 minutes of raw optical data. We stripped baseline wander using a digital bandpass filter set between 0.5 Hz and 5.0 Hz. Pulse rate estimates matched concurrent ECG recordings within two beats per minute. The empirical trade-off remains clear. Performance stayed stable."
+  },
+  {
+    "id": "TC_105",
+    "category": "STEM / Quantitative Engineering",
+    "domain": "Biomedical Informatics",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Analisis sinyal elektrokardiogram pada 120 pasien poli jantung menunjukkan akurasi klasifikasi aritmia sebesar 93,6% menggunakan model 1D-CNN. Pada sembilan rekaman pasien lanjut usia, terdapat gangguan derau frekuensi tinggi yang bersumber dari tremor otot dinding dada subjek saat perekaman elektroda. Kami memproses ulang sinyal derau tersebut menggunakan dekomposisi wavelet diskrit daubechies-4 untuk memisahkan gelombang QRS dari getaran muskular. Penapisan derau ini mengembalikan sensitivitas deteksi denyut ventrikel prematur ke angka 91,2%. Konsekuensi empiris ini terbukti nyata. Kinerja sistem tetap stabil."
+  },
+  {
+    "id": "TC_Q01",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Ilmu Hukum / Hukum Bisnis",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Disparitas putusan permohonan penundaan kewajiban pembayaran utang di Pengadilan Niaga Jakarta Pusat memicu ketidakpastian hukum bagi kreditur konkuren. Pada periode 2023 hingga 2025, kami mencatat sembilan putusan homologasi yang dibatalkan pada tingkat kasasi akibat multitafsir Pasal 222 ayat 3 Undang-Undang Kepailitan. Majelis hakim terbelah. Satu majelis menolak permohonan karena utang belum jatuh tempo secara mutlak, sementara majelis lain mengabulkan permohonan atas dasar asas kelangsungan usaha debitur yang memiliki 400 pekerja aktif. Pertentangan putusan ini nyata."
+  },
+  {
+    "id": "TC_Q02",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Ilmu Hukum / Metodologi Yuridis",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Kami menerapkan metode yuridis normatif melalui telaah undang-undang dan komparasi kasus peradilan niaga. Dari 34 salinan putusan kasasi Mahkamah Agung yang kami himpun, sengketa berfokus pada insolvensi perbankan syariah kurun 2020 sampai 2024. Tujuh salinan putusan tidak lengkap. Kami mencoret berkas yang hilang amar pertimbangannya demi menjaga reliabilitas penelusuran doktrin hukum. Penelusuran doktrin terhambat nyata. Rasio decidendi hakim kami bedah memakai pendekatan hermeneutis teleologis."
+  },
+  {
+    "id": "TC_Q03",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Ilmu Hukum / Hukum Pidana & Siber",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Harmonisasi antara Pasal 27 ayat 3 Undang-Undang ITE dan norma baru dalam Kitab Undang-Undang Hukum Pidana menimbulkan friksi yuridis yang tajam pada tingkat penyidikan kepolisian. Kami menemukan 18 laporan pencemaran nama baik di Polda Metro Jaya yang proses penuntutannya tertunda lebih dari enam bulan. Penyidik gamang. Ketidakjelasan batasan delik aduan absolut dalam KUHP baru membuat penegak hukum ragu menahan tersangka tanpa persetujuan tertulis dari korban langsung. Kepastian hukum terabaikan."
+  },
+  {
+    "id": "TC_Q04",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "International Law / Maritime Law",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "Saat memeriksa sengketa batas maritim di bawah UNCLOS Pasal 121, kami mengamati pertentangan doktrinal yang tak terselesaikan. Schofield (2021) mencatat bahwa elevasi surut rendah tidak dapat memicu hak maritim berdaulat. Pengadilan internasional berbeda sikap. Putusan Arbitrase Laut China Selatan 2016 menetapkan kriteria historis ketat, namun negara pantai tetap memaksakan klaim garis pangkal yang melanggar ketentuan traktat. Konflik teritorial tak terhindarkan."
+  },
+  {
+    "id": "TC_Q05",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Human Rights Law",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "Guna menilai kepatuhan negara terhadap putusan Pengadilan Hak Asasi Manusia Eropa, audit kami melacak 42 berkas permohonan penahanan imigran kurun 2018-2024 di empat yurisdiksi perbatasan. Empat berkas perkara kehilangan catatan eksekusi. Alih-alih berspekulasi tentang pelaksanaan putusan, kami mengabaikan data yang tidak terverifikasi dan berfokus pada 38 laporan kepatuhan yang utuh. Hambatan penelusuran arsip terbukti nyata."
+  },
+  {
+    "id": "TC_Q06",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Manajemen Bisnis / Kewirausahaan",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Suksesi kepemimpinan pada perusahaan keluarga sektor manufaktur tekstil di Surakarta kerap memicu stagnasi operasional yang parah. Berdasarkan observasi pendahuluan kami pada 16 unit usaha tekstil generasi kedua, delapan perusahaan mencatat penurunan omzet di atas 30% dalam dua tahun pasca-peralihan kendali pendiri. Generasi penerus menolak model manajemen tradisional. Pendiri enggan melepaskan otoritas tanda tangan perbankan, sementara penerus menuntut digitalisasi sistem pengadaan bahan baku secara radikal. Friksi keluarga melumpuhkan bisnis."
+  },
+  {
+    "id": "TC_Q07",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Manajemen Bisnis / Riset Kualitatif",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Riset ini menerapkan desain studi kasus ganda dengan teknik penentuan informan purposive sampling pada lima jaringan logistik nasional. Kami mewawancarai 14 manajer operasional dan tiga direktur pengadaan secara tatap muka dengan durasi rata-rata 65 menit per sesi. Tiga informan menolak perekaman suara. Kami menyiasati penolakan tersebut dengan membuat catatan lapangan terperinci dan meminta paraf verifikasi transkrip langsung pada hari yang sama. Saturasi data tercapai pada wawancara ke-12."
+  },
+  {
+    "id": "TC_Q08",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Manajemen Bisnis / Perilaku Organisasi",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Analisis tematik terhadap 240 halaman transkrip wawancara mengungkap bahwa resistensi karyawan terhadap sistem ERP baru bukan disebabkan oleh kendala teknis antarmuka. Karyawan senior merasa kehilangan privasi pengawasan kerja. Mandor lapangan sengaja menginput data jam lembur palsu pada berkas manual untuk menutupi selisih waktu sistem digital sebesar 18%. Praktik pembangkangan halus ini berlangsung selama empat bulan tanpa terdeteksi oleh manajemen pusat. Kendala kultural mengalahkan teknologi."
+  },
+  {
+    "id": "TC_Q09",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Qualitative Marketing / Supply Chain",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "Kami mewawancarai 16 direktur pengadaan komponen kedirgantaraan di kawasan industri manufaktur antara bulan Maret dan Juli 2025. Dua partisipan menghentikan sesi tanya jawab sebelum seluruh topik selesai dibahas. Kami membuang transkrip yang terpotong tersebut dan mempertahankan 14 rekaman utuh dengan total 182 halaman catatan tekstual. Saturasi tema tercapai secara bertahap."
+  },
+  {
+    "id": "TC_Q10",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Organizational Behavior / Startups",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "Cross-case qualitative synthesis across eight venture-backed technology startups demonstrated that founder psychological burnout accelerates engineer attrition rates. Early employees reported chronic decision fatigue. When executive priorities shifted three times within a single quarter, 24 senior software developers resigned within six weeks. Exit interviews confirmed that uncalibrated workload spikes destroyed organizational psychological safety. Executive instability drove talent loss."
+  },
+  {
+    "id": "TC_Q11",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Psikologi Klinis & Terapan",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Restrukturisasi jadwal dinas malam pada unit perawatan intensif RSUD Tangerang memicu lonjakan gejala depresi subklinis pada perawat junior. Pengukuran awal kami menggunakan kuesioner PHQ-9 pada 85 staf perawat menunjukkan 42% responden mengalami gangguan tidur kronis dan penurunan fokus klinis. Beban kerja perawat tidak manusiawi. Satu perawat terpaksa mengawasi empat pasien ventilator sekaligus saat pergantian giliran kerja pukul 03.00 dini hari. Keselamatan pasien terancam."
+  },
+  {
+    "id": "TC_Q12",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Psikologi / Metodologi Asesmen",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Kami menguji validitas konstruk instrumen kecemasan kerja menggunakan analisis faktor konfirmatori pada sampel 210 pekerja industri perakitan elektronik. Pada tahap pengumpulan data gelombang kedua, sebanyak 28 kuesioner gugur karena pola jawaban seragam yang mengindikasikan ketidakseriusan pengisian skala Likert. Kami mencatat reliabilitas Cronbach Alpha sebesar 0,884 pada 182 sampel valid yang tersisa. Skala ukur terbukti konsisten."
+  },
+  {
+    "id": "TC_Q13",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Psikologi Klinis / Terapi Kognitif",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Hasil uji analisis kovarians ANCOVA membuktikan bahwa intervensi terapi perilaku kognitif kelompok efektif menurunkan skor distres emosional secara signifikan. Kelompok perlakuan mencatat penurunan rerata skor Beck Depression Inventory sebesar 11,4 poin dibanding kelompok kontrol tunggu. Respons partisipan sangat variatif. Enam partisipan dengan riwayat trauma masa kecil membutuhkan tiga sesi konseling individu tambahan untuk mencegah drop-out dari protokol penelitian. Efek terapeutik terbukti nyata."
+  },
+  {
+    "id": "TC_Q14",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Cognitive Psychology / Perception",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We conducted a repeated-measures experimental trial with 64 undergraduate participants to evaluate visual working memory degradation under acoustic distraction. Twelve participant datasets were disqualified due to gaze-tracking calibration drift exceeding two visual degrees. The experimental script logged millisecond response latencies across 400 stimulus trials per subject. Remaining trials proved stable."
+  },
+  {
+    "id": "TC_Q15",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Educational Psychology",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "Kami memantau efikasi diri akademik pada 140 siswa kejuruan dan mencatat penurunan motivasi tajam saat model pembelajaran hibrida diberlakukan. Angka putus belajar mencapai 14% di tengah semester. Siswa yang tidak memiliki meja belajar tenang di rumah meraih skor 18,2 poin lebih rendah pada tes pemecahan masalah dibanding rekan sekelasnya. Kesenjangan fasilitas rumah tangga menentukan daya tahan belajar siswa."
+  },
+  {
+    "id": "TC_Q16",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Sosiologi & Kebijakan Publik",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Pembangunan tanggul laut raksasa di pesisir utara Semarang mengubah struktur mata pencaharian tradisional 320 keluarga nelayan tangkap. Tangkapan udang rebon anjlok hingga 65% dalam enam bulan pertama proyek konstruksi. Akses perahu nelayan terblokir paku bumi beton. Pemuda desa terpaksa beralih profesi menjadi buruh kasar harian lepas di pelabuhan dengan upah yang tidak menentu. Transformasi sosial berlangsung menyakitkan."
+  },
+  {
+    "id": "TC_Q17",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Sosiologi / Etnografi",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Penelitian ini menggunakan pendekatan etnografi kritis melalui partisipasi langsung peneliti selama 90 hari di perkampungan nelayan Tambaklorok. Kami tinggal bersama keluarga nelayan dan mencatat 45 entri buku harian lapangan mengenai negosiasi kompensasi ganti rugi tanah. Tokoh pemuda sempat mencurigai peneliti sebagai mata-mata pengembang proyek tanggul. Kami membangun kepercayaan kembali melalui mediasi ketua rukun nelayan setempat. Akses lapangan berhasil dipulihkan."
+  },
+  {
+    "id": "TC_Q18",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Sosiologi / Distribusi Bantuan Sosial",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Data temuan lapangan kami mengungkap bahwa 48 kepala keluarga miskin tidak terdaftar dalam penerima bantuan pangan non-tunai akibat ketidaksinkronan data kependudukan NIK. Ketua RT setempat sengaja mendaftarkan kerabat dekat yang secara ekonomi tergolong mampu ke dalam basis data terpadu kesejahteraan sosial. Warga miskin tidak berdaya melawan patronase politik lokal. Ketimpangan struktural ini melanggengkan lingkaran kemiskinan antargenerasi."
+  },
+  {
+    "id": "TC_Q19",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Urban Studies / Public Housing",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "en",
+    "text": "Kami mengkaji dampak kebijakan relokasi perumahan rakyat di empat distrik industri tua. Dari catatan lapangan kami, pemerintah daerah memindahkan 640 keluarga berpenghasilan rendah tanpa menyediakan armada bus penghubung. Warga miskin terisolasi total. Waktu tempuh komuter membengkak dua kali lipat, sementara angka bolos sekolah anak naik 28% dalam satu tahun ajaran. Kegagalan koordinasi antar-dinas terbukti nyata."
+  },
+  {
+    "id": "TC_Q20",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Sociology of Labor",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "en",
+    "text": "Observational fieldwork across four e-commerce fulfillment facilities showed that algorithmic shift scheduling disempowers warehouse floor associates. Workers accumulated micro-penalties for bathroom breaks exceeding three minutes. Three hundred associates filed informal grievances regarding automated wage deductions that failed to account for scanner hardware latency. The strike spread rapidly. The algorithmic management regime triggered wildcat walkouts."
+  },
+  {
+    "id": "TC_Q21",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Ilmu Komunikasi / Jurnalisme Daring",
+    "chapter": "Bab 1 - Latar Belakang",
+    "lang": "id",
+    "text": "Komodifikasi judul umpan klik clickbait pada pemberitaan politik portal berita daring nasional mendegradasi ruang publik diskursif. Pemantauan kami terhadap 450 tajuk berita pemilu selama bulan Oktober 2024 menunjukkan bahwa 72% judul memakai kata sensasional yang menyesatkan pembaca. Redaksi mengejar target impresi iklan. Akibatnya, pemilih pemula terfragmentasi ke dalam kubu-kubu opini partisan tanpa membaca substansi program calon pemimpin. Ruang deliberasi publik rusak."
+  },
+  {
+    "id": "TC_Q22",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Ilmu Komunikasi / Analisis Wacana",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "id",
+    "text": "Kami menerapkan analisis wacana kritis model tiga dimensi Norman Fairclough untuk membongkar ideologi tersembunyi di balik 60 teks editorial surat kabar nasional. Korpus teks dikodekan menggunakan matriks analisis teks mikro, praktik diskursif meso, dan praktik sosiokultural makro. Tiga asisten peneliti menguji inter-coder reliability dan mencapai skor Cohen Kappa 0,84. Konsensus interpretasi terverifikasi ketat."
+  },
+  {
+    "id": "TC_Q23",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Ilmu Komunikasi / Media Sosial",
+    "chapter": "Bab 4 - Pembahasan",
+    "lang": "id",
+    "text": "Pemeriksaan terhadap 12.000 komentar pada unggahan kampanye TikTok memperlihatkan hegemoni bahasa sarkasme agresif yang dirancang oleh akun buzzer bayaran. Kami melacak bahwa 45 akun terkoordinasi membanjiri kolom komentar dengan salinan teks yang sama dalam rentang 30 detik pasca-unggahan tayang. Algoritma rekomendasi tertipu oleh lonjakan interaksi semu tersebut. Polarisasi daring sengaja dimanipulasi."
+  },
+  {
+    "id": "TC_Q24",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Communication & Rhetoric",
+    "chapter": "Bab 3 - Metodologi",
+    "lang": "en",
+    "text": "We deployed rhetorical genre analysis to examine greenwashing disclosures across 50 annual sustainability reports published by multinational petroleum conglomerates. Two corporate reports were withheld behind legal nondisclosure barriers. We substituted those cases with publicly filed shareholder proxy resolutions to maintain our corpus target. Textual coding proceeded systematically."
+  },
+  {
+    "id": "TC_Q25",
+    "category": "Social Sciences, Humanities & Law",
+    "domain": "Applied Ethics & Philosophy",
+    "chapter": "Bab 2 - Tinjauan Pustaka",
+    "lang": "en",
+    "text": "The conceptual assimilation of human dignity into quantifiable utilitarian loss functions exposes profound moral contradictions in autonomous lethal weapons ethics. Sparrow (2020) demonstrated that accountability gaps emerge when autonomous targeting decisions cannot be traced to human intentionality. Military engineers downplay these moral risks. By operationalizing ethical compliance through statistical proxies, developers obscure the fundamental distinction between moral agency and mechanical computation. Ethical responsibility dissolves."
+  }
+]
