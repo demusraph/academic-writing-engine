@@ -3,11 +3,11 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Standard: APA 7th & IEEE](https://img.shields.io/badge/Standard-APA%207th%20%26%20IEEE-success.svg)](references/academic_style_guide.md)
+[![Standard: UI SK 2143/2017 & APA 7th](https://img.shields.io/badge/Standard-UI%202017%20%26%20APA%207th-success.svg)](references/academic_style_guide.md)
 [![Agent Skills Spec: 1.0](https://img.shields.io/badge/Agent%20Skills-Spec%201.0-purple.svg)](SKILL.md)
 [![Zero-Auth Verification](https://img.shields.io/badge/Verification-Zero--Auth%20Public%20APIs-brightgreen.svg)](scripts/)
 
-> **The definitive academic writing standard, stylometric calibration, and automated thesis formatting engine for higher education and peer-reviewed research.** Refines synthetic drafts into rigorous, empirical, publication-grade academic prose and compiles them directly into 100% compliant Microsoft Word (`.docx`) documents.
+> **The definitive academic writing standard, stylometric calibration, and automated thesis formatting engine for higher education and peer-reviewed research.** Aligned with **Keputusan Rektor Universitas Indonesia Nomor 2143/SK/R/UI/2017** and international APA 7th / IEEE standards. Refines synthetic drafts into rigorous, empirical, publication-grade academic prose and compiles them directly into 100% compliant Microsoft Word (`.docx`) documents.
 
 ---
 
@@ -49,8 +49,9 @@ graph TD
 
 ### 4. Phase 4: Universal Academic DOCX Compilation
 * Assembles clean, publication-grade Word documents via native OpenXML:
-  * **Paper Format:** Standard A4 (80 gsm), Margins: Left 4.0 cm (binding margin), Top 2.5 cm, Right 2.5 cm, Bottom 2.5 cm.
+  * **Paper Format:** Standard A4 (80 gsm), Margins: Left 4.0 cm (binding margin), Top 3.0 cm, Right 3.0 cm, Bottom 3.0 cm (SK Rektor UI No. 2143/SK/R/UI/2017 compliant; optional 2.5 cm legacy APA preset).
   * **Typography:** Times New Roman 12pt, 1.5 line spacing, Justified alignment, 1.0 cm first-line indentation.
+  * **Institutional Branding:** Automated right-aligned footer "Universitas Indonesia" (Arial 10pt Bold).
   * **Color Sanitation:** 100% Pure Black (`#000000`), purging web clipboard gray bleed (`#374151`).
   * **Scientific Tables:** APA-style 3-line open tables (three horizontal borders, zero vertical column lines).
 

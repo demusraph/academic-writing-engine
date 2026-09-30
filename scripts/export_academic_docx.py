@@ -6,15 +6,18 @@
 """
 export_academic_docx.py
 -----------------------
-Engine generator dokumen Microsoft Word (.docx) berstandar karya ilmiah & skripsi:
-- Ukuran Kertas: A4 (80 gr)
-- Margin: Kiri 4.0 cm, Atas 2.5 cm, Kanan 2.5 cm, Bawah 2.5 cm
+Engine generator dokumen Microsoft Word (.docx) berstandar karya ilmiah & skripsi
+mengacu pada: Keputusan Rektor Universitas Indonesia Nomor 2143/SK/R/UI/2017
+tentang Pedoman Teknis Penulisan Tugas Akhir Mahasiswa Universitas Indonesia:
+- Ukuran Kertas: A4 (80 gr, 21.5 cm x 29.7 cm)
+- Margin: Kiri 4.0 cm (termasuk jilid), Atas 3.0 cm, Kanan 3.0 cm, Bawah 3.0 cm
 - Font: Times New Roman 12 pt, 100% Hitam Murni (#000000)
 - Paragraf: Spasi 1.5, Rata Kanan-Kiri (Justified), Indentasi Baris Pertama 1.0 cm
 - Spasi Before/After = 0 pt
-- Heading 1 (BAB): Bold, KAPITAL, Rata Tengah (Center), jarak 2 spasi
+- Heading 1 (BAB): Bold, KAPITAL, Rata Tengah (Center), Angka Arab (contoh: BAB 3 METODE PENELITIAN)
 - Heading 2 (Subbab): Bold, Title Case, Rata Kiri, jarak 1 spasi ke materi
 - Tabel Ilmiah (Gaya APA): Hanya 3 garis lajur horizontal, tanpa garis kolom vertikal
+- Footer Wajib: "Universitas Indonesia" (Arial 10 pt Bold, Align Right)
 - Istilah Asing: Italic otomatis
 """
 
@@ -33,15 +36,32 @@ from docx.oxml.ns import nsdecls
 COLOR_BLACK = RGBColor(0, 0, 0)
 FONT_FAMILY = "Times New Roman"
 
-def setup_page_layout(doc: Document):
-    """Menyetel ukuran A4 dan margin standar 4 - 2.5 - 2.5 - 2.5 cm."""
+def setup_page_layout(doc: Document, preset: str = "ui"):
+    """Menyetel ukuran A4 dan margin standar UI (4 - 3 - 3 - 3 cm) serta footer wajib."""
     section = doc.sections[0]
-    section.page_width = Cm(21.0)
+    section.page_width = Cm(21.5)
     section.page_height = Cm(29.7)
     section.left_margin = Cm(4.0)
-    section.top_margin = Cm(2.5)
-    section.right_margin = Cm(2.5)
-    section.bottom_margin = Cm(2.5)
+    
+    if preset == "ui":
+        section.top_margin = Cm(3.0)
+        section.right_margin = Cm(3.0)
+        section.bottom_margin = Cm(3.0)
+        
+        # Tambahkan auto text footer "Universitas Indonesia" (Arial 10 pt Bold Align Right)
+        footer = section.footer
+        footer_p = footer.paragraphs[0]
+        footer_p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        run = footer_p.add_run("Universitas Indonesia")
+        run.font.name = "Arial"
+        run.font.size = Pt(10)
+        run.font.bold = True
+        run.font.color.rgb = COLOR_BLACK
+    else:
+        section.top_margin = Cm(2.5)
+        section.right_margin = Cm(2.5)
+        section.bottom_margin = Cm(2.5)
+        
     section.different_first_page_header_footer = False
 
 def set_apa_table_borders(table):
@@ -275,8 +295,8 @@ def convert_markdown_to_academic_docx(md_content: str, output_path: str):
     print(f"[SUCCESS] Dokumen akademik berhasil dikompilasi: {output_path}")
 
 def generate_sample_document(output_path: str):
-    """Menghasilkan dokumen percontohan yang mematuhi seluruh aturan skripsi & anti-AI."""
-    sample_md = """# BAB III METODE PENELITIAN
+    """Menghasilkan dokumen percontohan yang mematuhi seluruh aturan skripsi UI & anti-AI."""
+    sample_md = """# BAB 3 METODE PENELITIAN
 
 ## 3.1. Desain Eksperimental dan Alur Kerja
 

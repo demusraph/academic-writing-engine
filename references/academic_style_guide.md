@@ -1,18 +1,26 @@
 # Academic Style Guide: Technical Formatting & Typography Standards
 
-Technical formatting standards for academic theses, dissertations, research proposals, and scientific journal submissions. Aligned with international academic standards (APA 7th Edition & IEEE).
+Technical formatting standards for academic theses, dissertations, research proposals, and scientific journal submissions. Aligned with **Pedoman Teknis Penulisan Tugas Akhir Mahasiswa Universitas Indonesia (SK Rektor UI No. 2143/SK/R/UI/2017)** and international academic standards (APA 7th Edition & IEEE).
 
 ---
 
 ## 1. Page Setup & Document Layout
 
-* **Paper Size:** A4 (21.0 cm x 29.7 cm), standard 80 gsm paper.
-* **Printing Format:** Double-sided printing from Chapter 1 through appendices.
+* **Paper Size:** A4 (21.5 cm x 29.7 cm), standard 80 gsm white HVS paper.
+* **Printing Format:** Single-sided printing (*single side*) for standard submission (hardcopy thesis/dissertation for UI library in double-sided format).
 * **Document Margins:**
-  * **Left Margin:** 4.0 cm (accommodates bookbinding / binding margin).
-  * **Top Margin:** 2.5 cm.
-  * **Right Margin:** 2.5 cm.
-  * **Bottom Margin:** 2.5 cm.
+  * **Left Margin:** **4.0 cm** (including 1.0 cm binding margin).
+  * **Top Margin:** **3.0 cm**.
+  * **Right Margin:** **3.0 cm**.
+  * **Bottom Margin:** **3.0 cm**.
+* **Mandatory UI Footer:** Starting from Abstract through References, all pages must include an automated footer:
+  * Text: **"Universitas Indonesia"**
+  * Typeface: **Arial 10 pt Bold**
+  * Alignment: **Align Right**
+* **Pagination (Dynamic Positioning):**
+  * **Preliminary Section (Bagian Awal):** Lowercase Roman numerals (`i, ii, iii...`), centered at bottom, 2.5 cm from the bottom edge. (Title page is counted as page `i` but unprinted).
+  * **Main Body & End Matter:** Arabic numerals (`1, 2, 3...`), positioned at the upper right corner (1.5 cm from top edge, 3.0 cm from right edge).
+  * **First Page of Each Chapter:** Page number relocated to the center bottom, 2.5 cm from the bottom edge.
 * **Title Page (Cover):** Title typography begins **4 blank lines** down from the top margin.
 * **Institutional Integrity:**
   * No blank pages permitted mid-manuscript, except required structural section dividers.
